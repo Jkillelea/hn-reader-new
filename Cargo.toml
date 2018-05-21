@@ -1,0 +1,8 @@
+[package]
+name = "hn-reader-new"
+version = "0.1.0"
+authors = ["Jacob Killelea <jkillelea@protonmail.ch>"]
+
+[dependencies]
+reqwest = "*"
+url = "*"
