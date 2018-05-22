@@ -4,5 +4,5 @@ version = "0.1.0"
 authors = ["Jacob Killelea <jkillelea@protonmail.ch>"]
 
 [dependencies]
-reqwest = "*"
-url = "*"
+reqwest      = "0.8.5"  # higher level HTTP client library
+url          = "1.7.0"  # URL library for Rust, based on the WHATWG URL Standard
