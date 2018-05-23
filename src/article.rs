@@ -1,4 +1,3 @@
-// JSON
 use std::sync::{Arc, Mutex};
 use std::io::Read;
 use std::thread;
