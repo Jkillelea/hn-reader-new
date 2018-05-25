@@ -4,5 +4,7 @@ version = "0.1.0"
 authors = ["Jacob Killelea <jkillelea@protonmail.ch>"]
 
 [dependencies]
-reqwest      = "0.8.5"  # higher level HTTP client library
-url          = "1.7.0"  # URL library for Rust, based on the WHATWG URL Standard
+reqwest    = "0.8.5"  # higher level HTTP client library
+url        = "1.7.0"  # URL library for Rust, based on the WHATWG URL Standard
+serde      = "1.0.59" # A generic serialization/deserialization framework
+serde_json = "1.0.17" # A JSON serialization file format

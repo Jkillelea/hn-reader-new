@@ -4,6 +4,7 @@ use std::thread;
 
 use url::Url;
 use reqwest;
+use serde_json;
 
 pub const BASE_URL: &str = "https://hacker-news.firebaseio.com/";
 

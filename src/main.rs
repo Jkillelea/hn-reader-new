@@ -9,6 +9,10 @@ extern crate reqwest;
 extern crate url;
 use url::Url;
 
+// JSON parsing
+extern crate serde;
+extern crate serde_json;
+
 // Asynchronously filled buffer of the requested data from HN
 pub mod article;
 use article::*;
@@ -26,7 +30,9 @@ fn main() -> Result<(), Box<error::Error>> {
 
     while let Some(art) = article_buffer.next() {
         match art {
-            ArticleResult::Text(text) => println!("{}", text),
+            ArticleResult::Text(text) => {
+                println!("{}", text);
+            },
             ArticleResult::Waiting => {
                 println!("Waiting");
                 thread::sleep(Duration::from_millis(100));
